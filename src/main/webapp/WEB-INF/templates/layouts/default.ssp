@@ -1,0 +1,28 @@
+<%@ val header: String %>
+<%@ val body: String %>
+
+<!DOCTYPE html>
+<head>
+    <title>Layout</title>
+    <link rel="stylesheet" href="/asserts/css/bootstrap.min.css"
+    </head>
+    <body>
+        <div class="container">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand"
+                    href="https://github.com/spring-projects/spring-data-couchbase">
+                    Spring Data Couchbase
+                </a>
+                <ul class="nav">
+                    <li>
+                        <a href="/beer">Beers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1>${header}</h1>
+        ${unescape(body)}
+        </div>
+    </body>
+</html>

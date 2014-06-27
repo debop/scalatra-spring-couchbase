@@ -1,0 +1,30 @@
+<%@ val brewery: example.domain.Brewery %>
+
+<table class="table table-striped">
+<tbody>
+    <tr>
+        <td>Name</td>
+        <td>${brewery.name}</td>
+    </tr>
+    <tr>
+        <td>City</td>
+        <td>${brewery.city}</td>
+    </tr>
+    <tr>
+        <td>State</td>
+        <td>${brewery.state}</td>
+    </tr>
+    <tr>
+        <td>Code</td>
+        <td>${brewery.code}</td>
+    </tr>
+    <tr>
+        <td>Country</td>
+        <td>${brewery.country}</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>${brewery.description}</td>
+    </tr>
+</tbody>
+</table>

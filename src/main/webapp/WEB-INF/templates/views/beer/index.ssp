@@ -1,0 +1,27 @@
+<%@ val allBeers:java.util.List[example.domain.Beer]%>
+<% attributes("header") = "All Beers" %>
+
+<table class="table table-bordered table-striped">
+<thead>
+    <tr>
+        <td>Name</td>
+        <td>ABV</td>
+        <td>Brewery</td>
+    </tr>
+</thead>
+<tbody>
+    #if allBeers.isEmpty
+    <tr>
+        <td colspan="3">No Beers</td>
+    </tr>
+    #else
+        #for(beer:example.domain.Beer <- allBeers)
+            <tr>
+                <td>${beer.name}</td>
+                <td>${beer.avg}</td>
+                <td><a href="/brewery/${beer.brewery}">[Link]</a></td>
+            </tr>
+        #end
+    #end
+</tbody>
+</table>
