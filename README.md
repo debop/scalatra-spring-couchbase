@@ -1,0 +1,2 @@
+scalatra-spring-couchbase
+=========================
